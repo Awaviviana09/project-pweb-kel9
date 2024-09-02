@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+  }
+  
+  .todo-list {
+    position: relative;
+    background: #e2e2e2;
+    padding: 30px;
+    border-radius: 20px 20px;
+    width: 700px; /* Set a fixed width */
+    height: 80%; /* Set a fixed height */
+    overflow: auto;
+    box-shadow: 5px 7px 22px 0px rgba(55,55,55,0.75);
+    -webkit-box-shadow: 5px 7px 22px 0px rgba(55,55,55,0.75);
+    -moz-box-shadow: 5px 7px 22px 0px rgba(55,55,55,0.75);
+  }
+  
+  .todo-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #585858;
+    border-radius: 15px 15px;
+    /* margin-bottom: 16px; */
+    margin-top: 16px;
+  }
+  
+  .input {
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex: 1;
+    width: 60%; /* Adjust this value according to your needs */
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .label {   
+    /* Adjust this value according to your needs */
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: justify;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    /* word-wrap: break-word; */
+  }
+  
+  .day-dropdown {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .category {
+    color: rgb(30, 30, 30);
+  }
+  
+  .category-dropdown {
+    padding: 9px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  .add-button,
+  .update-button,
+  .complete-button,
+  .delete-button,
+  .edit-button {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .add-button:hover,
+  .update-button:hover,
+  .complete-button:hover,
+  .delete-button:hover,
+  .edit-button:hover {
+    opacity: 0.7;
+  }
+  
+  .add-button {
+    background-color: #4CAF50;
+  
+  }
+  
+  .update-button {
+    background-color: #4CAF50; /* Green */
+  }
+  
+  .complete-button {
+    background-color: #287b97; /* Blue */
+  }
+  
+  .delete-button {
+    background-color: red; /* Red */
+  }
+  
+  .edit-button {
+    background-color: #bdbdbd; /* Gray */
+    color: black;
+  }
+  
+  .app.light {
+    background-color: #ffffff; /* Light background color */
+  }
+  
+  .app.dark {
+    background-color: #221f1f; /* Dark background color */
+  }
+  
+  .theme-toggle-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
